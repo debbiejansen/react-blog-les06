@@ -7,11 +7,13 @@ function Navigation() {
     return (
         <nav className="navigation-bar">
             <div className="navigation-logo">
+                <NavLink to="/">
                 <img
                     src={logo}
                     alt="Company logo"
                     className="logo-image"
                     />
+                </NavLink>
             </div>
 
             <ul className="navigation-links">
