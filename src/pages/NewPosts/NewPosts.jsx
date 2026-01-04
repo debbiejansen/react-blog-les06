@@ -54,7 +54,7 @@ function NewPosts() {
                     <input
                         type="text"
                         id="author-field"
-                        placeholder={errors.author ? errors.author.message : "Titel"}
+                        placeholder={errors.author ? errors.author.message : "Auteur"}
                         className={errors.author ? "input-error" : "" }
                         {...register("author", {
                             required: {
@@ -65,12 +65,12 @@ function NewPosts() {
                     />
                 </label>
 
-                <label htmlFor="message-field">
+                <label htmlFor="content-field">
                     <textarea
-                        id="message-field"
-                        placeholder={errors.messageContent ? errors.messageContent.message : "Titel"}
-                        className={errors.messageContent ? "input-error" : "" }
-                        {...register("messageContent", {
+                        id="content-field"
+                        placeholder="Vul hier jouw blog in"
+                        className={errors.content ? "input-error" : "" }
+                        {...register("content", {
                             required: {
                                 value: true,
                                 message: 'Dit veld is verplicht',
@@ -87,7 +87,7 @@ function NewPosts() {
                     >
         </textarea>
                 </label>
-                {errors.message && <p className="error-message">{errors.messageContent.message}</p>}
+                {errors.content && <p className="error-message">{errors.content.message}</p>}
 
 
                 <button type="submit">
