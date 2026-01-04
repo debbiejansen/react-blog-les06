@@ -7,11 +7,13 @@ function NewPosts() {
     const {
         register,
         handleSubmit,
+        reset,
         formState: {errors},
     } = useForm();
 
     function handleFormSubmit(data) {
         console.log(data);
+        reset()
     }
 
         return (
