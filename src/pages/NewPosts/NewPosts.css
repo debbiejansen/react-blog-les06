@@ -1,0 +1,45 @@
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 18px;
+    margin: 20px;
+}
+
+.form-layout input,
+.form-layout textarea {
+    min-width: 60vw;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.form-layout textarea {
+    min-height: 120px;
+}
+
+/*<-----------------> ERROR MESSAGE <----------------->*/
+
+.input-error {
+    border: 1px solid #d33;
+}
+
+.input-error::placeholder {
+    color: #d33;
+}
+
+.error-message {
+    font-size: 12px;
+    font-style: italic;
+    color: #d33;
+    margin-top: -10px;
+}
+
+/*<-----------------> BUTTON <----------------->*/
+
+button {
+    padding: 10px 24px;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+}

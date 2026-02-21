@@ -1,0 +1,22 @@
+.blogpost-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 18px;
+    margin: 20px;
+}
+
+.blogpost-title {
+    font-family: "Permanent Marker", cursive;
+}
+
+.back-to-overview {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.italics-text {
+    font-style: italic;
+}
